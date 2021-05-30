@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Yo, this is a navbar!"),console.log("Hello friend!")})();
+(()=>{"use strict";console.log("Hello Navbar!"),document.querySelector("body").insertAdjacentHTML("afterbegin",'\n        <div class="topnav">\n            <a href="">Home</a>\n            <a href="">Menu</a>\n        <a href="">About Us</a>\n        </div>\n        '),(console.log("Hello Home!"),{renderBackground:()=>{const e='<div class="intro"></div>';document.querySelector("body").insertAdjacentHTML("afterend",e),console.log(e)}}).renderBackground()})();
