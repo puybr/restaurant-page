@@ -1,8 +1,7 @@
 const home = () => {
-    console.log('Hello Home!');
     const renderBackground = () => {
         const body = document.querySelector('body');
-        const bg = `<div class="intro"></div>`;
+        const bg = `<div class="home"></div>`;
         body.insertAdjacentHTML("afterend", bg);
 
     }

@@ -2,7 +2,6 @@ import home from './home'
 
 const navbar = () => {
     const addNavbar = () => {
-        console.log('Hello Navbar!');
         const body = document.querySelector('body');
         const navElement = `
         <div class="topnav">
@@ -17,7 +16,6 @@ const navbar = () => {
     }
     const setHomeActive = () => {
         const home = document.getElementById('home');
-        console.log(home);
         home.setAttribute('style', 'text-decoration: underline');
         navHome();
     }
