@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Yo, this is a navbar!"),console.log("Hello friend!")})();
