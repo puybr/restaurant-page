@@ -4,7 +4,6 @@ const home = () => {
         const body = document.querySelector('body');
         const bg = `<div class="intro"></div>`;
         body.insertAdjacentHTML("afterend", bg);
-        console.log(bg);
 
     }
     return { renderBackground };

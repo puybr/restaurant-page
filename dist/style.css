@@ -21,14 +21,16 @@ body {
 
 }
 
-.topnav a {
+.topnav li {
   color: #111;
   padding: 10px;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 
 .intro{
-  background:url(images/330844-P9MZCI-697.jpg);
+  background:url(images/pizzaface.png);
   background-position: center;
   height: 100vh;
   -webkit-background-size: cover;
