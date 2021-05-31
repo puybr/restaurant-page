@@ -7,11 +7,12 @@ const home = () => {
     }
 
     const remove = () => {
-        const body = document.querySelector('body');
-        body.removeChild(document.querySelector('.homepage'));
+        const home = document.querySelector('.homepage');
+        home.remove();
     };
     return { renderBackground, remove };
 
 }
+
 
 export default home

@@ -3,8 +3,12 @@ class Pizza {
         this.title = title;
         this.price = price;
         this.description = description;
-    }; 
-    render() {
+    };
+    clear() {
+        const menu = document.querySelector('.menu');
+        menu.remove();
+    };
+    renderPizza() {
         const pizzaMenu = `
         <div class="menu">
             <h1>${this.title} </h1>
@@ -31,10 +35,5 @@ class Vegan {
 
 };
 
+
 export { Pizza, Vegan }
-
-
-const holyCheeses = new Pizza('HOLY CHEESES', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
-const johnno = new Pizza('JOHNNO', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
-holyCheeses.render();
-johnno.render();
