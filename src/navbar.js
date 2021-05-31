@@ -24,10 +24,14 @@ const navbar = () => {
         function selectMenu() {
             homePage.remove();
             menuButton.setAttribute('style', 'text-decoration: underline');
+            homeButton.removeAttribute('style', 'text-decoration: underline');
         }
         function selectHome() {
-            console.log('home selected');
             homePage.renderBackground();
+            const homeButton = document.getElementById('home');
+            homeButton.setAttribute('style', 'text-decoration: underline');
+            const menuButton = document.getElementById('menu');
+            menuButton.removeAttribute('style', 'text-decoration: underline');
         }
 
     }
@@ -35,11 +39,6 @@ const navbar = () => {
         const homeButton = document.getElementById('home');
         homeButton.setAttribute('style', 'text-decoration: underline');
         navHome();
-        setMenuActive();
-    }
-    const setMenuActive = () => {
-        const pizza1 = new Pizza('DELICATEZZA', '£13.00', 'Roasted Fennel & Orange Base');
-        pizza1.sayHi();
     }
     const navHome = () => {
         const homePage = home();

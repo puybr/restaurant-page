@@ -7,7 +7,6 @@ const home = () => {
     }
 
     const remove = () => {
-        console.log('removing the home page');
         const body = document.querySelector('body');
         body.removeChild(document.querySelector('.homepage'));
     };
