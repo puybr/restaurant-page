@@ -26,12 +26,23 @@ body {
 }
 
 
-.homepage {
+.home {
   background:url(images/pizzaface.png);
   background-position: center;
   height: 100vh;
   background-size: cover;
   text-align: center;
+ }
+
+ .about {
+  border-bottom: 1px solid grey;
+  padding: 30px;
+  margin: 0 100px;
+  height: 100vh;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
  }
 
  .menu {
@@ -41,4 +52,13 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
+ }
+
+
+ .active {
+   text-decoration: underline;
+ }
+
+ .wrapper {
+  height: 100vh;
  }

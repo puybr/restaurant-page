@@ -4,10 +4,6 @@ class Pizza {
         this.price = price;
         this.description = description;
     };
-    clear() {
-        const menu = document.querySelector('.menu');
-        menu.remove();
-    };
     renderPizza() {
         const pizzaMenu = `
         <div class="menu">
@@ -16,8 +12,11 @@ class Pizza {
             <p>${this.description}</p>
         </div>
         `;
-        const body = document.querySelector('body');
-        body.insertAdjacentHTML('afterend', pizzaMenu);
+        const body = document.querySelector('body')
+        const content = document.createElement('div');
+        content.classList.add('wrapper');
+        body.appendChild(content);
+        content.innerHTML = pizzaMenu;
     }
 
 };

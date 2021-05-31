@@ -14,11 +14,7 @@ const about = () => {
         const body = document.querySelector('body');
         body.insertAdjacentHTML('afterend', aboutUs);
     };
-    const clear = () => {
-        const about = document.querySelector('.about');
-        about.remove();
-    }
-    return { renderAboutPage, clear };
+    return { renderAboutPage};
 
 }
 

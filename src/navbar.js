@@ -5,17 +5,12 @@ import about from './about'
 const holyCheeses = new Pizza('HOLY CHEESES', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
 const johnno = new Pizza('JOHNNO', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
 
-johnno.renderPizza();
-holyCheeses.renderPizza();
-
 const homePage = home();
 const aboutPage = about();
-aboutPage.renderAboutPage();
-
-
 
 const navbar = () => {
     const addNavbar = () => {
+        homePage.renderBackground();
         const body = document.querySelector('body');
         const navElement = `
         <ul class="topnav">
@@ -25,45 +20,47 @@ const navbar = () => {
         </ul>
         `;
         body.insertAdjacentHTML("afterbegin", navElement);
-        setHomeActive();
+        setActive('home');       
         setEventListeners();
-        aboutPage.clear();
-        homePage.renderBackground();
+        clearDisplay('home');   
+    }
+    const clearDisplay = target => {
+        const elements = document.querySelectorAll('div');
+        elements.forEach((element) => {
+            if (element.className !== `${target}`){
+                element.remove();
+            }
+        })
     }
     const setEventListeners = () => {
         const menuButton = document.getElementById('menu');
-        const homeButton = document.getElementById('home');
-        const aboutButton = document.getElementById('about');
         menuButton.addEventListener('click', selectMenu);
-        homeButton.addEventListener('click', selectHome);
-        aboutButton.addEventListener('click', selectAbout);
-        function selectMenu() {
-            menuButton.setAttribute('style', 'text-decoration: underline');
-            homeButton.removeAttribute('style', 'text-decoration: underline');
-            aboutButton.removeAttribute('style', 'text-decoration: underline');
-            homePage.remove();
-
+        function selectMenu(e) {
+            setActive(e.target.id);
+            clearDisplay(e.target.id);
+            johnno.renderPizza();
+            holyCheeses.renderPizza();
         }
-        function selectHome() {
-            homePage.renderBackground();
-            homeButton.setAttribute('style', 'text-decoration: underline');
-            menuButton.removeAttribute('style', 'text-decoration: underline');
-            aboutButton.removeAttribute('style', 'text-decoration: underline');
-
-        }
-        function selectAbout() {
-            aboutButton.setAttribute('style', 'text-decoration: underline');
-            menuButton.removeAttribute('style', 'text-decoration: underline');
-            homeButton.removeAttribute('style', 'text-decoration: underline');
-            homePage.remove();
-
-
-        }
-
-    }
-    const setHomeActive = () => {
         const homeButton = document.getElementById('home');
-        homeButton.setAttribute('style', 'text-decoration: underline');
+        homeButton.addEventListener('click', selectHome);
+        function selectHome(e) {
+            setActive(e.target.id);
+            clearDisplay(e.target.id);
+            homePage.renderBackground();
+
+        }
+        const aboutButton = document.getElementById('about');
+        aboutButton.addEventListener('click', selectAbout);
+        function selectAbout(e) {
+            setActive(e.target.id);
+            clearDisplay(e.target.id);
+            aboutPage.renderAboutPage();
+        }
+    
+    }
+    const setActive = target => {
+        const button = document.getElementById(`${target}`);
+        button.classList.add('active')
     }
 
     return { addNavbar }

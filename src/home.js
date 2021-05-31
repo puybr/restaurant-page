@@ -2,15 +2,10 @@ const home = () => {
     const renderBackground = () => {
         const body = document.querySelector('body');
         const bg = document.createElement('div');
-        bg.classList.add('homepage');
+        bg.classList.add('home');
         body.appendChild(bg);
     }
-
-    const remove = () => {
-        const home = document.querySelector('.homepage');
-        home.remove();
-    };
-    return { renderBackground, remove };
+    return { renderBackground };
 
 }
 
