@@ -59,8 +59,12 @@ const navbar = () => {
     
     }
     const setActive = target => {
-        const button = document.getElementById(`${target}`);
-        button.classList.add('active')
+        const elements = document.querySelectorAll('li')
+        elements.forEach((element) => {
+           element.classList.remove('active');
+        })
+        const link = document.getElementById(`${target}`);
+        link.classList.add('active');
     }
 
     return { addNavbar }
