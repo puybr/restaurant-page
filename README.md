@@ -1,8 +1,6 @@
 # Restaurant Page - [Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page)
 
-Additional steps to take when deploying a subfolder to Github Pages:
-1. `git add dist && git commit -m "Initial dist subtree commit"`
-2. `git subtree push --prefix dist origin gh-pages`
+1. run `npm init` in the project directory to generate a `package.json` file
 
 ## Directory Structure
 
@@ -20,3 +18,7 @@ Additional steps to take when deploying a subfolder to Github Pages:
 +---package.json
 /---webpack.config.js
 ```
+
+* Additional steps to take when deploying a subfolder to Github Pages:
+1. `git add dist && git commit -m "Initial dist subtree commit"`
+2. `git subtree push --prefix dist origin gh-pages`
