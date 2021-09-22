@@ -44,6 +44,7 @@ module.exports = {
 ```sh
 +---dist
 |   |   index.html
+|   |   main.js
 |   |   style.css
 +---node_modules
 +---src
