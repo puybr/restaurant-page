@@ -6,7 +6,7 @@ cd new-site
 ```
 1. run `npm init -y` in the project directory to generate a `package.json` file
 2. run `npm install webpack webpack-cli --save-dev` to install webpack to the `node_modules` directory of your project
-3. Add a `.gitignore` file to your project and add `node_modules/`: `echo node_modules/ > .gitignore`
+3. Add a `.gitignore` file to your project and add `node_modules/`: `echo "node_modules/" >> .gitignore`
 4. Create a `webpack.config.js` file (`echo "" >> webpack.config.js`) that looks this:
 ```js
 const path = require('path');
