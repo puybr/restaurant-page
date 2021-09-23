@@ -16,7 +16,7 @@ const about = () => {
     };
     return { renderAboutPage};
 
-}
+};
 
 
 export default about

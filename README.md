@@ -1,5 +1,9 @@
 # Restaurant Page - [Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page)
 
+🍕 Live Project 👉 [here](https://ghost-goblin.github.io/restaurant-page/)
+
+## 📓 Webpack Guide
+
 ```sh
 mkdir new-site
 cd new-site
@@ -19,7 +23,7 @@ module.exports = {
   },
 };
 ```
-**OPTIONAL** Add a `README.md` file: `echo "# personal-site" >> README.md`
+**OPTIONAL** Add a `README.md` file: `echo "# New Site Title" >> README.md`
 
 5. Create a `src` and `dist` directory: `mkdir src dist`
 

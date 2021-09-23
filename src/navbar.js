@@ -23,15 +23,15 @@ const navbar = () => {
         setActive('home');       
         setEventListeners();
         clearDisplay('home');   
-    }
+    };
     const clearDisplay = target => {
         const elements = document.querySelectorAll('div');
         elements.forEach((element) => {
             if (element.className !== `${target}`){
                 element.remove();
-            }
-        })
-    }
+            };
+        });
+    };
     const setEventListeners = () => {
         const menuButton = document.getElementById('menu');
         menuButton.addEventListener('click', selectMenu);
@@ -40,7 +40,7 @@ const navbar = () => {
             clearDisplay(e.target.id);
             johnno.renderPizza();
             holyCheeses.renderPizza();
-        }
+        };
         const homeButton = document.getElementById('home');
         homeButton.addEventListener('click', selectHome);
         function selectHome(e) {
@@ -48,24 +48,24 @@ const navbar = () => {
             clearDisplay(e.target.id);
             homePage.renderBackground();
 
-        }
+        };
         const aboutButton = document.getElementById('about');
         aboutButton.addEventListener('click', selectAbout);
         function selectAbout(e) {
             setActive(e.target.id);
             clearDisplay(e.target.id);
             aboutPage.renderAboutPage();
-        }
+        };
     
-    }
+    };
     const setActive = target => {
         const elements = document.querySelectorAll('li')
         elements.forEach((element) => {
            element.classList.remove('active');
-        })
+        });
         const link = document.getElementById(`${target}`);
         link.classList.add('active');
-    }
+    };
 
     return { addNavbar }
 

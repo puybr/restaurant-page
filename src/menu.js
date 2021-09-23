@@ -17,7 +17,7 @@ class Pizza {
         content.classList.add('wrapper');
         body.appendChild(content);
         content.innerHTML = pizzaMenu;
-    }
+    };
 
 };
 
@@ -30,7 +30,7 @@ class Vegan {
     }; 
     sayHi() {
         console.log(`Hi! I'm a ${this.title} pizza!`);
-    }
+    };
 
 };
 
