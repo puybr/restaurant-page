@@ -85,6 +85,6 @@ echo "" >> style.css
  - - -
 
 
-* Additional steps to take when deploying a subfolder to Github Pages:
+* [Additional steps to take when deploying a subfolder to Github Pages](https://gist.github.com/cobyism/4730490):
 1. `git add dist && git commit -m "Initial dist subtree commit"`
 2. `git subtree push --prefix dist origin gh-pages`
