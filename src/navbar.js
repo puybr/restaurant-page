@@ -2,8 +2,9 @@ import home from './home'
 import { Pizza, Vegan } from './menu'
 import about from './about'
 
-const holyCheeses = new Pizza('HOLY CHEESES', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
-const johnno = new Pizza('JOHNNO', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion');
+const holyCheeses = new Pizza('HOLY CHEESES', '£11.50', 'Gorgonzola, Parmesan, mascarpone, caramelised onion', 'images/holy-cheeses.jpg');
+const johnno = new Pizza('JOHNNO', '£13.50', 'Red onions, olives, peppers, sautéed mushrooms, Parmesan, fresh and dried chillies', 'images/johnno.jpg');
+const meathead = new Pizza('MEATHEAD', '£15.00', 'Chorizo, pepperoni, pancetta, pork and wild boar salami, and lamb Prosciutto with onions and mushrooms', 'images/meathead.jpg');
 
 const homePage = home();
 const aboutPage = about();
@@ -40,6 +41,7 @@ const navbar = () => {
             clearDisplay(e.target.id);
             johnno.renderPizza();
             holyCheeses.renderPizza();
+            meathead.renderPizza();
         };
         const homeButton = document.getElementById('home');
         homeButton.addEventListener('click', selectHome);
