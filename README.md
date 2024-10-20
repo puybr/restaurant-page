@@ -1,6 +1,6 @@
 # Restaurant Page - [Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page)
 
-🍕 Live Project 👉 [here](https://ghost-goblin.github.io/restaurant-page/)
+🍕 Live Project 👉 [here](https://puybr.github.io/restaurant-page/)
 
 ## 📓 Webpack Guide
 
