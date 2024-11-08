@@ -1,3 +1,5 @@
+"use strict";
+
 const about = () => { 
     const renderAboutPage = () => {
         const aboutUs = `
@@ -16,8 +18,6 @@ const about = () => {
         body.insertAdjacentHTML('afterend', aboutUs);
     };
     return { renderAboutPage};
-
 };
-
 
 export default about
