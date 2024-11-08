@@ -1,3 +1,5 @@
+"use strict";
+
 const home = () => {
     const renderBackground = () => {
         const body = document.querySelector('body');
@@ -6,8 +8,6 @@ const home = () => {
         body.appendChild(bg);
     };
     return { renderBackground };
-
 };
-
 
 export default home
