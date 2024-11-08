@@ -1,11 +1,11 @@
+"use strict";
+
 class Pizza {
     constructor(title, price, description, image) {
         this.title = title;
         this.price = price;
         this.description = description;
         this.image = image;
-
-
     };
     renderPizza() {
         const pizzaMenu = `
@@ -23,9 +23,7 @@ class Pizza {
         body.appendChild(content);
         content.innerHTML = pizzaMenu;
     };
-
 };
-
 
 class Vegan {
     constructor(title, price, description) {
@@ -36,7 +34,6 @@ class Vegan {
     sayHi() {
         console.log(`Hi! I'm a ${this.title} pizza!`);
     };
-
 };
 
 
