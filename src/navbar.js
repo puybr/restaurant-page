@@ -1,3 +1,5 @@
+"use strict";
+
 import home from './home'
 import { Pizza, Vegan } from './menu'
 import about from './about'
@@ -70,7 +72,6 @@ const navbar = () => {
     };
 
     return { addNavbar }
-
-}
+};
 
 export default navbar
