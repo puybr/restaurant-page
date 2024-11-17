@@ -11,7 +11,7 @@ class Pizza {
         <div>
             <h2>${this.title} </h2>
             <h3>${this.price}</h3>
-            <p>${this.description}</p>
+            <div>${this.description}</div>
         </div>
         `;
         const body = document.querySelector('body')
