@@ -2,10 +2,12 @@
 
 const home = () => {
     const renderBackground = () => {
+        const home = `
+        <div class="home">
+        <span><h1>PIZZAFACE</h1></span>
+        </div>`;
         const body = document.querySelector('body');
-        const bg = document.createElement('div');
-        bg.classList.add('home');
-        body.appendChild(bg);
+        body.insertAdjacentHTML('beforeend', home);  
     };
     return { renderBackground };
 };

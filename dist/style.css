@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
+  color: pink;
+  background-color: green;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 16rem;
 }
 
 body {
@@ -7,41 +16,36 @@ body {
   padding: 0;
 }
 
-
 .topnav {
-  background-color: #f3f3f3;
   display: flex;
   justify-content: center;
-  color: #111;
   margin: 0 auto;
   padding: 8px;
-
 }
 
 .topnav li {
-  color: #111;
   padding: 10px;
   list-style-type: none;
   cursor: pointer;
 }
 
-
 .home {
-  background:url(images/pizzaface.png);
-  background-position: center;
-  height: 100vh;
-  background-size: cover;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 100px;
+  height: 100vh;
+  display: block;
  }
 
  .about {
   padding: 30px;
-  margin: 0 auto;
-  height: 100vh;
   text-align: center;
   display: block;
   justify-content: center;
   align-items: center;
+  height: 100vh;
  }
 
  .menu {
@@ -52,11 +56,12 @@ body {
   align-items: center;
  }
 
-
  .active {
    text-decoration: underline;
  }
 
- .wrapper {
-  height: 100vh;
- }
+ @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 8rem;
+  }
+}

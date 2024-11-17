@@ -5,21 +5,18 @@ class Pizza {
         this.title = title;
         this.price = price;
         this.description = description;
-        this.image = image;
     };
     renderPizza() {
         const pizzaMenu = `
-        <div class="menu">
-            <h1>${this.title} </h1>
+        <div class="wrapper">
+            <h2>${this.title} </h2>
             <h3>${this.price}</h3>
             <p>${this.description}</p>
-            <img src=${this.image} alt="pizza" width="300">
-  
         </div>
         `;
         const body = document.querySelector('body')
         const content = document.createElement('div');
-        content.classList.add('wrapper');
+        content.classList.add('menu');
         body.appendChild(content);
         content.innerHTML = pizzaMenu;
     };
