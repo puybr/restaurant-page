@@ -13,7 +13,7 @@ const aboutPage = about();
 
 const navbar = () => {
     const addNavbar = () => {
-        homePage.renderBackground();
+        homePage.renderHome();
         const body = document.querySelector('body');
         const navElement = `
         <ul class="topnav">
@@ -56,7 +56,7 @@ const navbar = () => {
         function selectHome(e) {
             setActive(e.target.id);
             clearDisplay(e.target.id);
-            homePage.renderBackground();
+            homePage.renderHome();
 
         };
         const aboutButton = document.getElementById('about');

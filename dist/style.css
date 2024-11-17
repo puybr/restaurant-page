@@ -9,6 +9,7 @@ html {
 h1 {
   font-family: "Anton", sans-serif;
   font-size: 16rem;
+  top: 50%;
 }
 
 body {
@@ -62,6 +63,6 @@ body {
 
  @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
