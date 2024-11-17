@@ -17,14 +17,14 @@ const navbar = () => {
         const body = document.querySelector('body');
         const navElement = `
         <ul class="topnav">
-           <span class="dot">
-            <li id="home">HOME</li>
+           <span>
+                <li id="home">HOME</li>
             </span>
-            <span class="dot">
-            <li id="menu">MENU</li>
+            <span>
+                <li id="menu">MENU</li>
             </span>
-            <span class="dot">
-            <li id="about">ABOUT</li>
+            <span>
+                <li id="about">ABOUT</li>
             </span>
         </ul>
         `;

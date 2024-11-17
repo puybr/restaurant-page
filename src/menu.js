@@ -8,7 +8,7 @@ class Pizza {
     };
     renderPizza() {
         const pizzaMenu = `
-        <div class="wrapper">
+        <div>
             <h2>${this.title} </h2>
             <h3>${this.price}</h3>
             <p>${this.description}</p>
