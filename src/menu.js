@@ -8,11 +8,11 @@ class Pizza {
     };
     renderPizza() {
         const pizzaMenu = `
-        <div>
+        <section>
             <h2>${this.title} </h2>
             <h3>${this.price}</h3>
             <div>${this.description}</div>
-        </div>
+        </section>
         `;
         const body = document.querySelector('body')
         const content = document.createElement('div');

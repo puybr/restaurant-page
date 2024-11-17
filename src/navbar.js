@@ -17,15 +17,9 @@ const navbar = () => {
         const body = document.querySelector('body');
         const navElement = `
         <ul class="topnav">
-           <span>
-                <li id="home">HOME</li>
-            </span>
-            <span>
-                <li id="menu">MENU</li>
-            </span>
-            <span>
-                <li id="about">ABOUT</li>
-            </span>
+            <li id="home">HOME</li>
+            <li id="menu">MENU</li>
+            <li id="about">ABOUT</li>
         </ul>
         `;
         body.insertAdjacentHTML("afterbegin", navElement);
