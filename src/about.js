@@ -30,6 +30,13 @@ const about = () => {
                     </p>
                 </div>
             </div>
+            <h2>DELIVERY</h2>
+            <section>
+                <div>£2 charge for delivery</div>
+                <div>£15 minimum bill</div>
+                <div>We accept cards</div>
+                <div>Max delivery are: <b>3 miles</b></div>
+            </section>
         </div>
         `;
         const body = document.querySelector('body');

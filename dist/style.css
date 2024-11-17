@@ -13,10 +13,20 @@ html {
   text-align: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
 body {
   width: 100%;
   line-height: normal;
   margin: 0 auto;
+  hr {
+    border: 1px solid pink;
+    border-radius: 5px;
+    width: 20rem;
+  }
 }
 
 img {
@@ -73,6 +83,10 @@ p {
   align-items: center;
   margin: 0 auto;
   display: block;
+  width: 100%;
+  .address {
+    padding: 20px;
+  }
  }
 
  img#face {
@@ -104,6 +118,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {
