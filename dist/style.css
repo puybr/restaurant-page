@@ -9,7 +9,7 @@ html {
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
   font-family: 'Gill Sans', sans-serif;
   color: pink;
-  background-color: green;
+  background-color: rgb(0, 100, 0);
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ body {
   width: 100%;
   margin: 0 auto;
   hr {
-    border: 1px solid pink;
+    border: 1px solid inherit;
     border-radius: 5px;
     width: 20rem;
   }
