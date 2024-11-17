@@ -1,7 +1,7 @@
 "use strict";
 
 class Pizza {
-    constructor(title, price, description, image) {
+    constructor(title, price, description) {
         this.title = title;
         this.price = price;
         this.description = description;
