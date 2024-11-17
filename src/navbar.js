@@ -45,26 +45,31 @@ const navbar = () => {
         const menuButton = document.getElementById('menu');
         menuButton.addEventListener('click', selectMenu);
         function selectMenu(e) {
-            setActive(e.target.id);
-            clearDisplay(e.target.id);
-            johnno.renderPizza();
-            holyCheeses.renderPizza();
-            meathead.renderPizza();
+            if (!menuButton.classList.contains('active')) {
+                setActive(e.target.id);
+                clearDisplay(e.target.id);
+                johnno.renderPizza();
+                holyCheeses.renderPizza();
+                meathead.renderPizza();
+            } else return;
         };
         const homeButton = document.getElementById('home');
         homeButton.addEventListener('click', selectHome);
         function selectHome(e) {
-            setActive(e.target.id);
-            clearDisplay(e.target.id);
-            homePage.renderHome();
-
+            if (!homeButton.classList.contains('active')) {
+                setActive(e.target.id);
+                clearDisplay(e.target.id);
+                homePage.renderHome();
+            } else return;
         };
         const aboutButton = document.getElementById('about');
         aboutButton.addEventListener('click', selectAbout);
         function selectAbout(e) {
-            setActive(e.target.id);
-            clearDisplay(e.target.id);
-            aboutPage.renderAboutPage();
+            if (!aboutButton.classList.contains('active')) {
+                setActive(e.target.id);
+                clearDisplay(e.target.id);
+                aboutPage.renderAboutPage();
+            } else return;
         };
     
     };
