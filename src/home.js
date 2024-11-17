@@ -9,10 +9,9 @@ const home = () => {
                 <ul class="subtext">
                     <li id="facebook"><a href="http://facebook.com/pizzafacepizza" target="_blank">FACEBOOK</a></li>
                     <li id="twitter"><a href="https://twitter.com/pizzafacepizza" target="_blank">TWITTER</a></li>
-                    <li id="order"><a href="https://pizzaface.orderswift.com" target="_blank">ORDER ONLINE</a></li>
+                    <li id="order"><a href="https://pizzaface.orderswift.com" target="_blank">ORDER <nobr>ONLINE</a></li>
                 </ul>
-            </section>
-            <span><img src="images/1.jpg" alt="home"></span>
+            <img src="images/1.jpg" alt="home">
             <span class="wrapper">
             <section class="address">
                 <h2>HOVE</h2>

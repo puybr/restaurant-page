@@ -20,7 +20,6 @@ a {
 
 body {
   width: 100%;
-  line-height: normal;
   margin: 0 auto;
   hr {
     border: 1px solid pink;
@@ -38,9 +37,9 @@ img {
 
 h1 {
   font-family: "Anton", sans-serif;
-  font-size: 16rem;
-  line-height: 0;
+  font-size: 12rem;
   width: 100%;
+  line-height: 0;
 }
 
 h2 {
@@ -63,7 +62,8 @@ p {
   font-size: 1rem;
   justify-content: center;
   margin: 0 auto;
-  padding: 8px;
+  padding: 1rem;
+  padding-bottom: 1rem;
   :hover {
     text-decoration: underline;
   }
@@ -77,6 +77,10 @@ p {
   }
 }
 
+.subtext {
+  padding-bottom: 5rem;
+}
+
 .home {
   text-align: center;
   justify-content: center;
@@ -87,11 +91,14 @@ p {
   .address {
     padding: 20px;
   }
+  #quote {
+    padding: 30px;
+  }
  }
 
  img#face {
   padding: 1rem;
-  width: 100px;
+  width: 215px;
 }
 
  .about {
@@ -132,10 +139,16 @@ p {
     height: auto;
     padding-bottom: 30px;
   }
+  img#face {
+    width: 100px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 6rem;
+  }
+  img#face {
+    width: 150px;
   }
 }
