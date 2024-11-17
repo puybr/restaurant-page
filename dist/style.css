@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 html {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
   font-family: 'Gill Sans', sans-serif;
   color: pink;
   background-color: green;
   text-align: center;
+  body {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
 }
 
 h1 {
   font-family: "Anton", sans-serif;
   font-size: 16rem;
   line-height: 0;
+  width: 100%;
 }
 
 h2 {
@@ -32,39 +43,33 @@ img.face {
   padding: 1rem;
 }
 
-body {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.topnav {
+.topnav, .subtext {
   display: flex;
   font-size: 1rem;
   justify-content: center;
   margin: 0 auto;
   padding: 8px;
-}
-
-.topnav li {
-  padding: 10px;
-  list-style-type: none;
-  cursor: pointer;
+  :hover {
+    text-decoration: underline;
+  }
+  .active {
+    text-decoration: underline;
+  }
+  li {
+    padding: 10px;
+    list-style-type: none;
+    cursor: pointer;
+  }
 }
 
 .home {
-  padding: 30px;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   line-height: 100px;
-  height: 100vh;
   display: block;
+  line-height: 0;
  }
 
  .about {
@@ -84,9 +89,16 @@ body {
   align-items: center;
  }
 
- .active {
-   text-decoration: underline;
+ .subtext {
+  height: 100vh;
+  padding: 0;
  }
+
+ .wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
 
  @media only screen and (max-width: 600px) {
   h1 {
@@ -97,5 +109,9 @@ body {
 @media (max-width: 800px) {
   .wrapper {
     flex-direction: column;
+  }
+  .subtext {
+    height: auto;
+    padding: 30px;
   }
 }
