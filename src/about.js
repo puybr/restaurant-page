@@ -26,7 +26,7 @@ const about = () => {
                     Over the past three years a unique menu has begun to blossom, specialising in showcasing bold flavours, interesting ingredients, and taking pride in preparing everything by hand.
                     Amazing meats, great cheeses, and fresh herbs and veg, we make some damn good pizza. We've also added vegan and gluten-free options, and most excitingly have teamed up with Boho Gelato to add some inventive and ever-changing ice-creams and sorbets to the menu.
                     We've had great input and support from so many in the Brighton and Hove community that has really shaped what we have become. Without it, we wouldn't be who we are today, so thank you very much!
-                    We always like to get feedback good and bad, so tweet us, facebook us or <a href="mailto:feedback@pizzafacepizza.co.uk">email us</a>.
+                    We always like to get feedback good and bad, so <a href="https://twitter.com/pizzafacepizza" target="_blank">tweet us</a>, <a href="http://facebook.com/pizzafacepizza" target="_blank">facebook us</a> or <a href="mailto:feedback@pizzafacepizza.co.uk">email us</a>.
                     </p>
                 </div>
             </div>

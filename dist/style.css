@@ -55,6 +55,9 @@ h3 {
 
 p {
   text-align: left;
+  :hover {
+    text-decoration: underline;
+  }
 }
 
 .topnav, .subtext {
