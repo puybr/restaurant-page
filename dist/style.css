@@ -99,7 +99,6 @@ p {
 
  .splash {
   height: 100vh;
-  padding: 0;
  }
 
  .wrapper {
@@ -117,7 +116,7 @@ p {
   }
   .splash {
     height: auto;
-    padding: 30px;
+    padding-bottom: 30px;
   }
 }
 
