@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\r\n\r\nconst home = () => {\r\n    const renderHome = () => {\r\n        const home = `\r\n        <div class=\"home\">\r\n        <span><h1>PIZZAFACE</h1></span>\r\n        <span>\r\n        <p>FACEBOOK | TWITTER | ORDER ONLINE</p>\r\n        </span>\r\n        </div>`;\r\n        const body = document.querySelector('body');\r\n        body.insertAdjacentHTML('beforeend', home);  \r\n    };\r\n    return { renderHome };\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\r\n\n\n//# sourceURL=webpack://pizzaface/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\r\n\r\nconst home = () => {\r\n    const renderHome = () => {\r\n        const home = `\r\n        <div class=\"home\">\r\n        <h1>PIZZAFACE</h1>\r\n        <p>FACEBOOK | TWITTER | ORDER ONLINE</p>\r\n        </div>`;\r\n        const body = document.querySelector('body');\r\n        body.insertAdjacentHTML('beforeend', home);  \r\n    };\r\n    return { renderHome };\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\r\n\n\n//# sourceURL=webpack://pizzaface/./src/home.js?");
 
 /***/ }),
 
