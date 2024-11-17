@@ -18,7 +18,9 @@ const home = () => {
                     </span>
                 </ul>
             </span>
-            <img src="images/1.jpg" alt="home" width="100%">
+            <span>
+                <img src="images/1.jpg" alt="home">
+            </span>
         </div>`;
         const body = document.querySelector('body');
         body.insertAdjacentHTML('beforeend', home);  
