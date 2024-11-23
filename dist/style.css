@@ -101,7 +101,11 @@ p {
 
  img#face {
   padding: 1rem;
+  /* border-radius: 50%; */
+  height: 15rem;
   width: 15rem;
+  float: left;
+  object-fit: cover;
 }
 
  .about {
@@ -143,7 +147,9 @@ p {
     padding-bottom: 30px;
   }
   img#face {
-    width: 100px;
+    height: 200px;
+    width: 200px;
+    float: none;
   }
 }
 
@@ -152,6 +158,8 @@ p {
     font-size: 6rem;
   }
   img#face {
+    height: 150px;
     width: 150px;
+    float: none;
   }
 }
